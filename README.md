@@ -1,18 +1,24 @@
-Random Forest for Matlab
+# Random Forest for Matlab 🌲🌳🌴🎄🎋
 
-This toolbox was written for my own education and to give me a chance to explore the models a bit.
+forked from [karpathy/Random-Forest-Matlab](https://github.com/karpathy/Random-Forest-Matlab)
+
+![](random_forest_parula.png)
+
+This toolbox was written for education purposes by Andrej Karpathy.
 It is NOT intended for any serious applications and it does not NOT do many of things you would
-want a mature implementation to do, like leaf pruning. If you wish to use a strong implementation
-I recommend Scikit Learn / Python. For Matlab I do not really have a recommendation.
+want a mature implementation to do, like leaf pruning. 
+
 
 ---------------------------------------------------------------------------
 Usage:
 
 Random Forests for classification: (see demo for more)
+```matlab
 opts.classfierID= [2, 3]; % use both 2D-linear weak learners (2) and conic (3)
 m= forestTrain(X, Y, opts);
 yhat = forestTest(m, X);
 fprintf('Training accuracy = %.2f\n', mean(yhat==Y));
+```
 
 ---------------------------------------------------------------------------
 More info:
